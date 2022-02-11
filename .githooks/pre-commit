@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Run black and isort before commiting
+
+isort --ext py -l 120 --lai 2 kindle_dashboard/ tests/ setup.py
+black kindle_dashboard/ tests/ setup.py
